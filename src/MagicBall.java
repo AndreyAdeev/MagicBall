@@ -32,24 +32,48 @@ public class MagicBall implements ActionListener {
 
     public void actionPerformed(ActionEvent e) {     // метод для работы с объектами событий
         if(e.getSource() == b1)      // ссылка на объект события и т.д.
-            rand = (int) (Math.random() * 8);
-        if (rand == 0) {
+            rand = (int) (Math.random() * 20 + 1);
+        if (rand == 1) {
             answer.setText("Бесспорно");
-        } else if (rand == 1) {
-            answer.setText("Определённо, да!");
         } else if (rand == 2) {
-            answer.setText("Вероятнее всего");
+            answer.setText("Нет");
         } else if (rand == 3) {
-            answer.setText("Хорошие перспективы");
+            answer.setText("Никаких сомнений");
         } else if (rand == 4) {
-            answer.setText("Спроси позже...");
+            answer.setText("Определенно да");
         } else if (rand == 5) {
-            answer.setText("Попробуй снова");
+            answer.setText("Можешь быть уверен в этом");
         } else if (rand == 6) {
-            answer.setText("Мой ответ - нет");
+            answer.setText("Мне кажется - да");
         } else if (rand == 7) {
+            answer.setText("Всё очень туманно");
+        } else if (rand == 8) {
+            answer.setText("Хорошие перспективы");
+        } else if (rand == 9) {
+            answer.setText("Да нет, наверное");
+        } else if (rand == 10) {
+            answer.setText("Да");
+        } else if (rand == 11) {
+            answer.setText("Пока не ясно, попробуй снова");
+        } else if (rand == 12) {
+            answer.setText("Спроси позже");
+        } else if (rand == 13) {
+            answer.setText("Лучше не рассказывать");
+        } else if (rand == 14) {
+            answer.setText("Сейчас нельзя предсказать");
+        } else if (rand == 15) {
+            answer.setText("Сконцентрируйся и спроси опять");
+        } else if (rand == 16) {
+            answer.setText("Даже не думай");
+        } else if (rand == 17) {
+            answer.setText("Мой ответ - нет");
+        } else if (rand == 18) {
+            answer.setText("По моим данным - нет");
+        } else if (rand == 19) {
+            answer.setText("Перспективы не очень хорошие");
+        } else if (rand == 20) {
             answer.setText("Весьма сомнительно");
-        }    // присвоение значения событию и т.д.
+        } 	// присвоение значения событию и т.д.
     }
 
     public static void main(String...s) {
